@@ -2,15 +2,70 @@ body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .box-one {
-    background-color: #1f2937;
+    background-color: #1f2937; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-one .header {
+   display: flex;
+   justify-content: space-between;
+   font-size: 24px;
+   align-items: center;
+}
+
+.box-one .logo {
+    color: #f9faf8;
+}
+
+.box-one .links {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    padding: 50px;
+}
+
+.content .title {
+    padding: 10px;
+}
+
+.content .subtext {
+    padding: 10px;
+}
+
+.content .button {
+    padding: 10px;
+}
+
+.left {
+    flex-direction: column;
+    padding: 10px;
+}
+
+.right {
+    padding: 10px;
 }
 
 .box-two {
+    background-color: white; 
     color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
+
+.box-two .title
 
 .box-three {
     background-color: #e5e7eb;
@@ -25,4 +80,10 @@ body {
 footer {
     background-color: #1f2937;
     color: white;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: rgb(168, 167, 167);
 }
